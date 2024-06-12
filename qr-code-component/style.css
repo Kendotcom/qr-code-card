@@ -1,5 +1,7 @@
+/* Import the "Outfit" font */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
+/* Reset box model and set font family */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,6 +9,7 @@
   font-family: "Outfit", sans-serif;
 }
 
+/* Define custom properties */
 :root {
   --fw-400: 400;
   --fw-700: 700;
@@ -16,37 +19,43 @@
   --color-header: #1f3251;
 }
 
-body{
-    background-color: var(--bg-color-main);
+/* Body background color */
+body {
+  background-color: var(--bg-color-main);
 }
 
-.card{
-    padding: 20px;
-    position: fixed;
-    background-color: var(--bg-color-card);
-    width: 350px;
-    border-radius: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Styled card */
+.card {
+  padding: 20px;
+  position: fixed;
+  background-color: var(--bg-color-card);
+  width: 100%; /* Adjust width for responsiveness */
+  max-width: 325px; /* Set a maximum width */
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-img{
-    width: 100%;
-    border-radius: 20px;
+/* Responsive image */
+img {
+  width: 100%;
+  border-radius: 20px;
 }
 
-p{
-    font-size: 15px;
-    font-weight: var(--fw-400);
-    color: var(--color-p);
-    text-align: center;
-    padding: 0 15px;
+/* Paragraph styles */
+p {
+  font-size: 15px;
+  font-weight: var(--fw-400);
+  color: var(--color-p);
+  text-align: center;
+  padding: 0 15px;
 }
 
-.header{
-    font-weight: var(--fw-700);
-    text-align: center;
-    margin: 10px 0;
-    color: var(--color-header);
+/* Header styles */
+.header {
+  font-weight: var(--fw-700);
+  text-align: center;
+  margin: 10px 0;
+  color: var(--color-header);
 }
